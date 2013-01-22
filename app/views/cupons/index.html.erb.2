@@ -1,0 +1,34 @@
+<%- model_class = Cupon -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+
+<ul class="thumbnails">
+    <% @cupons.each do |cupon| %>
+   <li class="span4">
+     <div class="thumbnail">
+      <p><%= link_to cupon.nombre, cupon_path(cupon) %></p>
+      <%= image_tag cupon.foto %>
+      <p><%= cupon.descripcion %></p>
+      <p>
+       Precio actual: <span class="badge badge-success"><%= cupon.precio_dcto %></span>
+       Precio normal: <span class="badge badge-important"><%= cupon.precio_normal %></span>
+      </p>
+          <%= link_to 'Ver oferta',
+                      cupon_path(cupon), :class => 'btn btn-success btn-large' %>
+          <% link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_cupon_path(cupon), :class => 'btn btn-mini' %>
+          <% link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      cupon_path(cupon),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+     </div>
+    </li>
+    <% end %>
+</ul>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_cupon_path,
+            :class => 'btn btn-primary' %>
+

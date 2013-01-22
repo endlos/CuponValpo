@@ -1,0 +1,56 @@
+<%= form_for @cupon, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :nombre, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nombre, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :precio_normal, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :precio_normal, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :precio_dcto, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :precio_dcto, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :descripcion, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :descripcion, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :validez, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.datetime_select :validez, :class => 'datetime_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :stock, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :stock, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :foto, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :foto, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :empresa_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :empresa_id, :class => 'number_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                cupons_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,26 @@
+Twitter Bootstrap para Ruby on Rails
+====================================
+1) Agregar en .Gemfile
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
+
+2) Actualizar las dependencias
+  bundle update
+   o
+  bundle install
+
+3) Ejecutar estos comandos
+rails g bootstrap:install less
+rails g bootstrap:layout application fixed
+rails g bootstrap:themed cupons -f
+
+4) Para que el NAVBAR no tape la página hay que arreglar con padding el BODY:
+/app/assets/stylesheets/application.css
+@media(min-width:979px) {
+body    {
+ padding-top: 60px;
+ }
+}
+
+

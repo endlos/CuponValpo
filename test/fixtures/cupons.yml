@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  precio_normal: 1
+  precio_dcto: 1
+  descripcion: MyText
+  validez: 2013-01-19 11:31:10
+  stock: 1
+  foto: MyString
+
+two:
+  nombre: MyString
+  precio_normal: 1
+  precio_dcto: 1
+  descripcion: MyText
+  validez: 2013-01-19 11:31:10
+  stock: 1
+  foto: MyString
