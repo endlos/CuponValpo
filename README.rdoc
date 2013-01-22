@@ -15,7 +15,7 @@ Para descargar pinchen el icono de arriba que dice ZIP :-)
 
 == Agradecimientos
 
-1. Walter Liewald [@liewald](https://twitter.com/liewald)
-2. John Anderson [@sontek](https://twitter.com/sontek)
-3. Start-Up Chile [@startupchile](https://twitter.com/startupchile)
+1. Walter Liewald - @liewald[https://twitter.com/liewald]
+2. John Anderson - @sontek[https://twitter.com/sontek]
+3. Start-Up Chile - @startupchile[https://twitter.com/startupchile]
 
