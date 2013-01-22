@@ -2,7 +2,7 @@
 
 Aplicación web creada en Valparaíso durante el Workshop de RoR para principiantes:
 
- http://http://www.meetup.com/asechag/events/100255332/
+ http://www.meetup.com/asechag/events/100255332/
 
 == Descargar
 
